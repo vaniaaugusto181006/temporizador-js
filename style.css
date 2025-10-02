@@ -1,0 +1,198 @@
+body {
+ font-family: Arial, sans-serif;
+ background: #f4f4f4;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+}
+.temporizador {
+ background: white;
+ padding: 30px 40px;
+ border-radius: 10px;
+ box-shadow: 0 0 15px rgba(0,0,0,0.2);
+ text-align: center;
+}
+h1 {
+ margin-bottom: 20px;
+ color: #333;
+}
+input {
+ width: 80px;
+ padding: 8px;
+ margin: 5px;
+ font-size: 16px;
+ border-radius: 5px;
+ border: 1px solid #ccc;
+ text-align: center;
+}
+#displayTempo {
+ font-size: 48px;
+ font-weight: bold;
+ margin: 20px 0;
+ color: #333;
+ background: #eee;
+ padding: 15px 20px;
+ border-radius: 8px;
+ border: 2px solid #ccc;
+}
+.botoes button {
+ padding: 10px 15px;
+ margin: 5px;
+ font-size: 18px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ background: #007aff;
+ color: white;
+ transition: background 0.2s;
+}
+.botoes button:hover {
+ background: #005bb5;
+}
+#btnZerar {
+ background: #ff3b30;
+}
+#btnZerar:hover {
+ background: #c12a20;
+}
+/* Modo Escuro */
+body.modo-escuro {
+ background: #121212;
+ color: #fff;
+}
+body.modo-escuro #displayTempo {
+ background: #333;
+ color: #fff;
+}
+body.modo-escuro .botoes button {
+ background: #555;
+ color: #fff;
+}
+body.modo-escuro .botoes button:hover {
+ background: #777;
+}
+/* ===== MODO ESCURO AVANÇADO ===== */
+body.modo-escuro {
+ background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+ color: #ecf0f1;
+}
+body.modo-escuro .temporizador {
+ background: #2c3e50;
+ color: #ecf0f1;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+body.modo-escuro h1 {
+ color: #ecf0f1;
+}
+body.modo-escuro input {
+ background: #34495e;
+ border-color: #4a6572;
+ color: #ecf0f1;
+}
+body.modo-escuro input:focus {
+ border-color: #3498db;
+ box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+}
+body.modo-escuro #displayTempo {
+ background: #34495e;
+ border-color: #4a6572;
+ color: #ecf0f1;
+}
+body.modo-escuro .temporizador-ativo #displayTempo {
+ color: #3498db;
+ border-color: #3498db;
+ background: #2c3e50;
+}
+body.modo-escuro .botoes button {
+ background: #34495e;
+ color: #ecf0f1;
+ border: 2px solid #4a6572;
+}
+body.modo-escuro #btnIniciar {
+ background: #27ae60;
+}
+body.modo-escuro #btnPausar {
+ background: #f39c12;
+ color: #2c3e50;
+}
+body.modo-escuro #btnZerar {
+ background: #e74c3c;
+}
+body.modo-escuro #btnModoEscuro {
+ border-color: #ecf0f1;
+ color: #ecf0f1;
+ background: transparent;
+}
+body.modo-escuro #btnModoEscuro:hover {
+ background: #ecf0f1;
+ color: #2c3e50;
+}
+body.modo-escuro {
+ background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+ color: #ecf0f1;
+}
+body.modo-escuro .temporizador {
+ background: #2c3e50;
+ color: #ecf0f1;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+body.modo-escuro h1 {
+ color: #ecf0f1;
+}
+body.modo-escuro input {
+ background: #34495e;
+ border-color: #4a6572;
+ color: #ecf0f1;
+}
+body.modo-escuro input:focus {
+ border-color: #3498db;
+ box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+}
+body.modo-escuro #displayTempo {
+ background: #34495e;
+ border-color: #4a6572;
+ color: #ecf0f1;
+}
+body.modo-escuro .temporizador-ativo #displayTempo {
+ color: #3498db;
+ border-color: #3498db;
+ background: #2c3e50;
+}
+body.modo-escuro .botoes button {
+ background: #34495e;
+ color: #ecf0f1;
+ border: 2px solid #4a6572;
+}
+body.modo-escuro #btnIniciar {
+ background: #27ae60;
+}
+body.modo-escuro #btnPausar {
+ background: #f39c12;
+ color: #2c3e50;
+}
+body.modo-escuro #btnZerar {
+ background: #e74c3c;
+}
+body.modo-escuro #btnModoEscuro {
+ border-color: #ecf0f1;
+ color: #ecf0f1;
+ background: transparent;
+}
+body.modo-escuro #btnModoEscuro:hover {
+ background: #ecf0f1;
+ color: #2c3e50;
+}
+input.invalido {
+  border-color: #dc3545 !important;
+  background-color: #ffe6e6 !important;
+  animation: vibrar 0.3s ease-in-out;
+}
+@keyframes vibrar {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
